@@ -1,0 +1,31 @@
+main {
+    exclude{
+        "*.md"
+    }
+
+    settings{
+        recursive: True
+    }
+
+    pre-deps{
+        "github|Skiller9090/apply-before:special";
+    }
+
+    post-deps{
+        "github|Skiller9090/apply-after"
+    }
+}
+
+special {
+    run {
+        main
+    }
+
+    include{
+        ":N\A"
+    }
+
+    post-deps {
+        "github|Skiller9090/apply-extra"
+    }
+}
