@@ -1,10 +1,9 @@
 import requests
 from github import UnknownObjectException, BadCredentialsException
-from manager import Manager
+from .manager import Manager
 from pathlib import Path
 
 manager = Manager.get()
-
 
 def auth_error_handler(func):
     def inner_function(*args, **kwargs):

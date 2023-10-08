@@ -1,7 +1,7 @@
 from .source import Source
 from github import UnknownObjectException
 from typing import TYPE_CHECKING
-from utils import download_file
+from emulsion.utils import download_file
 import requests
 
 if TYPE_CHECKING:

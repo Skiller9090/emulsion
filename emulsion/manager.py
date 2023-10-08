@@ -1,4 +1,4 @@
-from configurations import Configurations
+from .configurations import Configurations
 from github import Github
 
 

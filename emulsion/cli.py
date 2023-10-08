@@ -1,9 +1,9 @@
 import pprint
 
 import click
-from manager import Manager
-from sources import GithubSource
-from apply import apply_fn
+from .manager import Manager
+from .sources import GithubSource
+from .apply import apply_fn
 
 manager = Manager.get()
 

@@ -1,13 +1,13 @@
 import fnmatch
 
-from manager import Manager
-from utils import auth_error_handler
+from .manager import Manager
+from .utils import auth_error_handler
 from dotemulsion import DotEmulsionInterpreter
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from sources import Source
-from sources import source_map
+    from emulsion.sources import Source
+from emulsion.sources import source_map
 
 manager = Manager.get()
 
